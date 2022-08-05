@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+function show(some) {
+ document.getElementById("demo").innerHTML = some
+}
+function myFirst() {
+ show("Hello")
+}
+function mySecond() {
+ show("Goodbye")
+}
+myFirst();
+mySecond();
+</script>
+</body>
+</html>
+  
+
+
+Output : Goodbye
+
+Asynchronous function
+
+
+Functions running in parallel with other functions are called asynchronous functions.
+A good example is setTimeOut().
+
+setTimeOut(myFunction, 3000){
+function myFunction(){
+document.getElementById(“demo”).innerHTML=”Hello World”;
+}
+}
+
+Callback functions
+A callback is a function passed as an argument to another function.
+This technique allows a function to call another function.
+A callback function can run after another function has finished.
+
+function mysum(a,b,mycallBack){
+Let sum = a+b;
+mycallBack(sum);
+}
+
+mysum(5,5,myDisplay);
+function mydisplay(some){
+document.getElementById(“demo”).innerHTML=some;}
