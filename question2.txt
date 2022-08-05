@@ -28,7 +28,7 @@ Asynchronous function
 Functions running in parallel with other functions are called asynchronous functions.
 A good example is setTimeOut().
 
-setTimeOut(myFunction, 3000){
+setTimeout(myFunction, 3000){
 function myFunction(){
 document.getElementById(“demo”).innerHTML=”Hello World”;
 }
